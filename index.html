@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="style.css" />
+    <script src="./js/script.js" defer type="module"></script>
+  </head>
+  <body>
+    <div class="alert-error">Digite somente Números
+      
+    </div>
+
+    <div class="container">
+      <main class="card">
+        <form>
+          <h1 class="title">Cálculo de IMC</h1>
+          <div class="input-wrapper">
+            <label for="weight">Peso (kg)</label>
+            <input id="weight" type="text" placeholder="60" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="height">Altura(cm)</label>
+            <input id="height" type="text" placeholder="165" />
+          </div>
+
+          <button type="submit">
+            Calcular IMC
+            <svg
+              width="10px"
+              height="10px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 12L4 12"
+                stroke="#323232"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14 18L19.9375 12.0625V12.0625C19.972 12.028 19.972 11.972 19.9375 11.9375V11.9375L14 6"
+                stroke="#323232"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </form>
+      </main>
+    </div>
+
+    <div class="modal-wrapper">
+      <div class="modal card">
+        <h2 class="title">
+          <button class="close">
+            <svg
+              width="15px"
+              height="15px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M19.207 6.207a1 1 0 0 0-1.414-1.414L12 10.586 6.207 4.793a1 1 0 0 0-1.414 1.414L10.586 12l-5.793 5.793a1 1 0 1 0 1.414 1.414L12 13.414l5.793 5.793a1 1 0 0 0 1.414-1.414L13.414 12l5.793-5.793z"
+                fill="#000000"
+              />
+            </svg>
+          </button>
+          <span>Seu imc é 28</span>
+        </h2>
+      </div>
+    </div>
+  </body>
+</html>
